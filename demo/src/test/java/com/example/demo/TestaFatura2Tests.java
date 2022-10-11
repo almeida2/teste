@@ -28,22 +28,8 @@ class TestaFatura2Tests {
 	@CsvSource({
 
 			"1,71112917000126, 28/09/2023, moveis planejados, 1500, fatura not null",  //classe valida
-			"1,7111291700012, 28/09/2023, moveis planejados, 1500, CNPJ invalido",     //cnpj com 13 caracteres
-			"1,71112917000123, 12/09/2023, moveis planejados, 1500, CNPJ invalido",    //cnpj modulo 11 errado
-			"1,00000000000000, 12/09/2023, moveis planejados, 1500, CNPJ invalido",    //cnpj modulo 11 errado
-			"1,11111111111111, 12/09/2023, moveis planejados, 1500, CNPJ invalido",    //cnpj modulo 11 errado
-			"1,22222222222222, 12/09/2023, moveis planejados, 1500, CNPJ invalido",    //cnpj modulo 11 errado
-			"1,71112917000126, 15/01/2023, moveis planejados, 1500, Data de vencimento invalida", // dt venc domingo
-			"1,71112917000126, 31/02/2022, moveis planejados, 1500, Data de vencimento invalida", // dt venc invalida
-			"1,71112917000126, , moveis planejados, 1500, Data de vencimento invalida", // dt venc null
-			"1,71112917000126, %, moveis planejados, 1500, Data de vencimento invalida", // dt venc caracter especial
-			"1,71112917000126, ' ', moveis planejados, 1500, Data de vencimento invalida", // dt venc branco
-			"1,71112917000126, 12/08/2022, moveis planejados, 1500, Data de vencimento invalida", // dt venc menor que data atual
-			"1,71112917000126, 28/09/2023,'', 1500, Descriminacao do servico invalido", // servico em branco
-			"1,71112917000126, 28/09/2023,, 1500, Descriminacao do servico invalido", // servico null
-			"1,71112917000126, 28/09/2023,moveis planejados, , Valor invalido", // valor null
-			"1,71112917000126, 28/09/2023,moveis planejados,'' , Valor invalido", // valor branco
-			"1,71112917000126, 28/09/2023,moveis planejados,0 , Valor invalido" // valor invalido
+			"1,71112917000126, 15/01/2023, moveis planejados, 1500, Data de vencimento invalida" // dt venc domingo
+			
 	})
 
 	// é possivel criar um arquivo csv com a massa de dados no source folder de teste
