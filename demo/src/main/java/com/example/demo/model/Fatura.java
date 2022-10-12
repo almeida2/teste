@@ -118,7 +118,7 @@ public class Fatura {
 		}
 	}
 	/**
-	 * calcula a diferença entre as datas se form maior o igual a 0 a data de venc eh valida
+	 * calcula a diferença entre as datas se for maior ou igual a 0 a data de venc eh valida
 	 * pre-requisito - supoe que o formato da data eh valido
 	 * @param dataAtual
 	 * @param dataVencimento

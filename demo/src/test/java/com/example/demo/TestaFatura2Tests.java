@@ -14,15 +14,16 @@ import com.example.demo.model.Fatura;
 
 class TestaFatura2Tests {
 	Fatura fatura = new Fatura();
-
+	/**
+	 * Obtem a data do sistema para validar a data de emissao
+	 * @return a data no formato texto dia mes e ano
+	 */
 	public String obtemDataAtual() {
 		DateTime data = new DateTime();
 		DateTimeFormatter fmt = DateTimeFormat.forPattern("dd/MM/YYYY");
 		// DateTime dataVencimento = dataAtual.plusDays(10);
 		return data.toString(fmt);
 	}
-
-	String dataVenc = obtemDataAtual();
 
 	@ParameterizedTest
 	@CsvSource({
